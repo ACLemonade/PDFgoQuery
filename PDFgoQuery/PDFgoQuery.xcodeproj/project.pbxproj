@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A67B9936531E52AF081F30 /* libPods-PDFgoQuery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC12E4D9FDA1727CE3291084 /* libPods-PDFgoQuery.a */; };
+		8C1506002230C2450057D940 /* PDHomepageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1505FF2230C2450057D940 /* PDHomepageViewModel.m */; };
+		8C27EFCA223213FF00AEE005 /* PDServantListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C27EFC9223213FF00AEE005 /* PDServantListModel.m */; };
+		8C27EFCD22321C1300AEE005 /* PDServantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C27EFCC22321C1300AEE005 /* PDServantDetailViewController.m */; };
+		8C3A05B2222FB29F00F804E6 /* PDHomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3A05B1222FB29F00F804E6 /* PDHomepageViewController.m */; };
+		8CE239CB222E02310025B1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE239C3222E02310025B1AF /* Assets.xcassets */; };
+		8CE239CE222E02310025B1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE239C8222E02310025B1AF /* main.m */; };
+		8CE239CF222E02310025B1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE239C9222E02310025B1AF /* AppDelegate.m */; };
+		8CE239D1222E034C0025B1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE239C4222E02310025B1AF /* LaunchScreen.storyboard */; };
+		8CE239D2222E034C0025B1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE239C6222E02310025B1AF /* Main.storyboard */; };
+		8CE23A2D222E5C1B0025B1AF /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A06222E5C1B0025B1AF /* UIView+Utils.m */; };
+		8CE23A2E222E5C1B0025B1AF /* UIButton+Countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A07222E5C1B0025B1AF /* UIButton+Countdown.m */; };
+		8CE23A2F222E5C1B0025B1AF /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A09222E5C1B0025B1AF /* UITextView+Placeholder.m */; };
+		8CE23A30222E5C1B0025B1AF /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A0A222E5C1B0025B1AF /* UIScrollView+Refresh.m */; };
+		8CE23A31222E5C1B0025B1AF /* UIControl+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A0C222E5C1B0025B1AF /* UIControl+Event.m */; };
+		8CE23A32222E5C1B0025B1AF /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A0E222E5C1B0025B1AF /* UIImage+Utils.m */; };
+		8CE23A33222E5C1B0025B1AF /* UIViewController+pd_transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A12222E5C1B0025B1AF /* UIViewController+pd_transition.m */; };
+		8CE23A34222E5C1B0025B1AF /* UINavigationController+pd_transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A13222E5C1B0025B1AF /* UINavigationController+pd_transition.m */; };
+		8CE23A35222E5C1B0025B1AF /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A18222E5C1B0025B1AF /* NSObject+Utils.m */; };
+		8CE23A36222E5C1B0025B1AF /* NSMutableDictionary+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A1B222E5C1B0025B1AF /* NSMutableDictionary+Sort.m */; };
+		8CE23A37222E5C1B0025B1AF /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A1C222E5C1B0025B1AF /* NSArray+Utils.m */; };
+		8CE23A38222E5C1B0025B1AF /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A1D222E5C1B0025B1AF /* NSString+Utils.m */; };
+		8CE23A39222E5C1B0025B1AF /* NSObject+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A20222E5C1B0025B1AF /* NSObject+MJExtension.m */; };
+		8CE23A3A222E5C1B0025B1AF /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A21222E5C1B0025B1AF /* NSDate+Utils.m */; };
+		8CE23A3E222E5CD20025B1AF /* RC_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A3C222E5CD20025B1AF /* RC_NavigationViewController.m */; };
+		8CE23A44222E62EC0025B1AF /* PDBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A42222E62EC0025B1AF /* PDBaseRequest.m */; };
+		8CE23A45222E62EC0025B1AF /* PDConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE23A43222E62EC0025B1AF /* PDConstant.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8ADE0D9A1D15538B5B58C41E /* Pods-PDFgoQuery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFgoQuery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDFgoQuery/Pods-PDFgoQuery.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1505FE2230C2450057D940 /* PDHomepageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDHomepageViewModel.h; sourceTree = "<group>"; };
+		8C1505FF2230C2450057D940 /* PDHomepageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDHomepageViewModel.m; sourceTree = "<group>"; };
+		8C1506012230F49E0057D940 /* PathMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathMacros.h; sourceTree = "<group>"; };
+		8C27EFC8223213FF00AEE005 /* PDServantListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDServantListModel.h; sourceTree = "<group>"; };
+		8C27EFC9223213FF00AEE005 /* PDServantListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDServantListModel.m; sourceTree = "<group>"; };
+		8C27EFCB22321C1300AEE005 /* PDServantDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDServantDetailViewController.h; sourceTree = "<group>"; };
+		8C27EFCC22321C1300AEE005 /* PDServantDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDServantDetailViewController.m; sourceTree = "<group>"; };
+		8C3A05B0222FB29F00F804E6 /* PDHomepageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDHomepageViewController.h; sourceTree = "<group>"; };
+		8C3A05B1222FB29F00F804E6 /* PDHomepageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDHomepageViewController.m; sourceTree = "<group>"; };
+		8CE239A8222E00220025B1AF /* PDFgoQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFgoQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE239C2222E02310025B1AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CE239C3222E02310025B1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CE239C5222E02310025B1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CE239C7222E02310025B1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CE239C8222E02310025B1AF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CE239C9222E02310025B1AF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CE239CA222E02310025B1AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CE239D3222E04050025B1AF /* PDPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDPrefixHeader.pch; sourceTree = "<group>"; };
+		8CE23A05222E5C1B0025B1AF /* UIControl+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Event.h"; sourceTree = "<group>"; };
+		8CE23A06222E5C1B0025B1AF /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		8CE23A07222E5C1B0025B1AF /* UIButton+Countdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Countdown.m"; sourceTree = "<group>"; };
+		8CE23A08222E5C1B0025B1AF /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		8CE23A09222E5C1B0025B1AF /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		8CE23A0A222E5C1B0025B1AF /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		8CE23A0B222E5C1B0025B1AF /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		8CE23A0C222E5C1B0025B1AF /* UIControl+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Event.m"; sourceTree = "<group>"; };
+		8CE23A0D222E5C1B0025B1AF /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		8CE23A0E222E5C1B0025B1AF /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
+		8CE23A0F222E5C1B0025B1AF /* UIButton+Countdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Countdown.h"; sourceTree = "<group>"; };
+		8CE23A10222E5C1B0025B1AF /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		8CE23A12222E5C1B0025B1AF /* UIViewController+pd_transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+pd_transition.m"; sourceTree = "<group>"; };
+		8CE23A13222E5C1B0025B1AF /* UINavigationController+pd_transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+pd_transition.m"; sourceTree = "<group>"; };
+		8CE23A14222E5C1B0025B1AF /* UIViewController+pd_transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+pd_transition.h"; sourceTree = "<group>"; };
+		8CE23A15222E5C1B0025B1AF /* UINavigationController+pd_transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+pd_transition.h"; sourceTree = "<group>"; };
+		8CE23A17222E5C1B0025B1AF /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		8CE23A18222E5C1B0025B1AF /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
+		8CE23A19222E5C1B0025B1AF /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		8CE23A1A222E5C1B0025B1AF /* NSObject+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJExtension.h"; sourceTree = "<group>"; };
+		8CE23A1B222E5C1B0025B1AF /* NSMutableDictionary+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Sort.m"; sourceTree = "<group>"; };
+		8CE23A1C222E5C1B0025B1AF /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
+		8CE23A1D222E5C1B0025B1AF /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		8CE23A1E222E5C1B0025B1AF /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
+		8CE23A1F222E5C1B0025B1AF /* NSMutableDictionary+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Sort.h"; sourceTree = "<group>"; };
+		8CE23A20222E5C1B0025B1AF /* NSObject+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJExtension.m"; sourceTree = "<group>"; };
+		8CE23A21222E5C1B0025B1AF /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		8CE23A22222E5C1B0025B1AF /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utils.h"; sourceTree = "<group>"; };
+		8CE23A24222E5C1B0025B1AF /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		8CE23A26222E5C1B0025B1AF /* SingletonPatternMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonPatternMacros.h; sourceTree = "<group>"; };
+		8CE23A27222E5C1B0025B1AF /* DataHandleMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandleMacros.h; sourceTree = "<group>"; };
+		8CE23A28222E5C1B0025B1AF /* ColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMacros.h; sourceTree = "<group>"; };
+		8CE23A2A222E5C1B0025B1AF /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		8CE23A2C222E5C1B0025B1AF /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
+		8CE23A3C222E5CD20025B1AF /* RC_NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RC_NavigationViewController.m; sourceTree = "<group>"; };
+		8CE23A3D222E5CD20025B1AF /* RC_NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RC_NavigationViewController.h; sourceTree = "<group>"; };
+		8CE23A40222E62EC0025B1AF /* PDConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDConstant.h; sourceTree = "<group>"; };
+		8CE23A41222E62EC0025B1AF /* PDBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDBaseRequest.h; sourceTree = "<group>"; };
+		8CE23A42222E62EC0025B1AF /* PDBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDBaseRequest.m; sourceTree = "<group>"; };
+		8CE23A43222E62EC0025B1AF /* PDConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDConstant.m; sourceTree = "<group>"; };
+		99EF89C5AB3C46C69F2DA8AD /* Pods-PDFgoQuery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFgoQuery.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDFgoQuery/Pods-PDFgoQuery.release.xcconfig"; sourceTree = "<group>"; };
+		CC12E4D9FDA1727CE3291084 /* libPods-PDFgoQuery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDFgoQuery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CE239A5222E00220025B1AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A67B9936531E52AF081F30 /* libPods-PDFgoQuery.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E59438659EE3A06786778D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC12E4D9FDA1727CE3291084 /* libPods-PDFgoQuery.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C3A05AB222FB20200F804E6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8C3A05AC222FB20200F804E6 /* Servant */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8C3A05AC222FB20200F804E6 /* Servant */ = {
+			isa = PBXGroup;
+			children = (
+				8C3A05AD222FB20200F804E6 /* viewModel */,
+				8C3A05AE222FB20200F804E6 /* model */,
+				8C3A05AF222FB20200F804E6 /* view */,
+			);
+			path = Servant;
+			sourceTree = "<group>";
+		};
+		8C3A05AD222FB20200F804E6 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8C1505FE2230C2450057D940 /* PDHomepageViewModel.h */,
+				8C1505FF2230C2450057D940 /* PDHomepageViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		8C3A05AE222FB20200F804E6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8C27EFC8223213FF00AEE005 /* PDServantListModel.h */,
+				8C27EFC9223213FF00AEE005 /* PDServantListModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8C3A05AF222FB20200F804E6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8C3A05B0222FB29F00F804E6 /* PDHomepageViewController.h */,
+				8C3A05B1222FB29F00F804E6 /* PDHomepageViewController.m */,
+				8C27EFCB22321C1300AEE005 /* PDServantDetailViewController.h */,
+				8C27EFCC22321C1300AEE005 /* PDServantDetailViewController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8CE2399F222E00220025B1AF = {
+			isa = PBXGroup;
+			children = (
+				8CE239AA222E00220025B1AF /* PDFgoQuery */,
+				8CE239A9222E00220025B1AF /* Products */,
+				B8171AEEF9F6CE01B69921E9 /* Pods */,
+				7E59438659EE3A06786778D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8CE239A9222E00220025B1AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CE239A8222E00220025B1AF /* PDFgoQuery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CE239AA222E00220025B1AF /* PDFgoQuery */ = {
+			isa = PBXGroup;
+			children = (
+				8C3A05AB222FB20200F804E6 /* Main */,
+				8CE23A02222E5C1B0025B1AF /* Public */,
+				8CE239C1222E02310025B1AF /* SupportingFiles */,
+			);
+			path = PDFgoQuery;
+			sourceTree = "<group>";
+		};
+		8CE239C1222E02310025B1AF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8CE239C2222E02310025B1AF /* AppDelegate.h */,
+				8CE239C9222E02310025B1AF /* AppDelegate.m */,
+				8CE239D3222E04050025B1AF /* PDPrefixHeader.pch */,
+				8CE239C4222E02310025B1AF /* LaunchScreen.storyboard */,
+				8CE239C6222E02310025B1AF /* Main.storyboard */,
+				8CE239C3222E02310025B1AF /* Assets.xcassets */,
+				8CE239C8222E02310025B1AF /* main.m */,
+				8CE239CA222E02310025B1AF /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8CE23A02222E5C1B0025B1AF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A3F222E62920025B1AF /* Network */,
+				8CE23A3B222E5CD20025B1AF /* Navi */,
+				8CE23A03222E5C1B0025B1AF /* Category */,
+				8CE23A23222E5C1B0025B1AF /* Macro */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		8CE23A03222E5C1B0025B1AF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A04222E5C1B0025B1AF /* UIKit */,
+				8CE23A11222E5C1B0025B1AF /* Other */,
+				8CE23A16222E5C1B0025B1AF /* Foundation */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8CE23A04222E5C1B0025B1AF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A05222E5C1B0025B1AF /* UIControl+Event.h */,
+				8CE23A06222E5C1B0025B1AF /* UIView+Utils.m */,
+				8CE23A07222E5C1B0025B1AF /* UIButton+Countdown.m */,
+				8CE23A08222E5C1B0025B1AF /* UIImage+Utils.h */,
+				8CE23A09222E5C1B0025B1AF /* UITextView+Placeholder.m */,
+				8CE23A0A222E5C1B0025B1AF /* UIScrollView+Refresh.m */,
+				8CE23A0B222E5C1B0025B1AF /* UIView+Utils.h */,
+				8CE23A0C222E5C1B0025B1AF /* UIControl+Event.m */,
+				8CE23A0D222E5C1B0025B1AF /* UITextView+Placeholder.h */,
+				8CE23A0E222E5C1B0025B1AF /* UIImage+Utils.m */,
+				8CE23A0F222E5C1B0025B1AF /* UIButton+Countdown.h */,
+				8CE23A10222E5C1B0025B1AF /* UIScrollView+Refresh.h */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8CE23A11222E5C1B0025B1AF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A12222E5C1B0025B1AF /* UIViewController+pd_transition.m */,
+				8CE23A13222E5C1B0025B1AF /* UINavigationController+pd_transition.m */,
+				8CE23A14222E5C1B0025B1AF /* UIViewController+pd_transition.h */,
+				8CE23A15222E5C1B0025B1AF /* UINavigationController+pd_transition.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8CE23A16222E5C1B0025B1AF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A17222E5C1B0025B1AF /* NSString+Utils.h */,
+				8CE23A18222E5C1B0025B1AF /* NSObject+Utils.m */,
+				8CE23A19222E5C1B0025B1AF /* NSDate+Utils.h */,
+				8CE23A1A222E5C1B0025B1AF /* NSObject+MJExtension.h */,
+				8CE23A1B222E5C1B0025B1AF /* NSMutableDictionary+Sort.m */,
+				8CE23A1C222E5C1B0025B1AF /* NSArray+Utils.m */,
+				8CE23A1D222E5C1B0025B1AF /* NSString+Utils.m */,
+				8CE23A1E222E5C1B0025B1AF /* NSObject+Utils.h */,
+				8CE23A1F222E5C1B0025B1AF /* NSMutableDictionary+Sort.h */,
+				8CE23A20222E5C1B0025B1AF /* NSObject+MJExtension.m */,
+				8CE23A21222E5C1B0025B1AF /* NSDate+Utils.m */,
+				8CE23A22222E5C1B0025B1AF /* NSArray+Utils.h */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8CE23A23222E5C1B0025B1AF /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A2A222E5C1B0025B1AF /* Macros.h */,
+				8CE23A28222E5C1B0025B1AF /* ColorMacros.h */,
+				8CE23A2C222E5C1B0025B1AF /* DimensMacros.h */,
+				8C1506012230F49E0057D940 /* PathMacros.h */,
+				8CE23A27222E5C1B0025B1AF /* DataHandleMacros.h */,
+				8CE23A26222E5C1B0025B1AF /* SingletonPatternMacros.h */,
+				8CE23A24222E5C1B0025B1AF /* UtilsMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		8CE23A3B222E5CD20025B1AF /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A3D222E5CD20025B1AF /* RC_NavigationViewController.h */,
+				8CE23A3C222E5CD20025B1AF /* RC_NavigationViewController.m */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+		8CE23A3F222E62920025B1AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CE23A41222E62EC0025B1AF /* PDBaseRequest.h */,
+				8CE23A42222E62EC0025B1AF /* PDBaseRequest.m */,
+				8CE23A40222E62EC0025B1AF /* PDConstant.h */,
+				8CE23A43222E62EC0025B1AF /* PDConstant.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B8171AEEF9F6CE01B69921E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE0D9A1D15538B5B58C41E /* Pods-PDFgoQuery.debug.xcconfig */,
+				99EF89C5AB3C46C69F2DA8AD /* Pods-PDFgoQuery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CE239A7222E00220025B1AF /* PDFgoQuery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE239BE222E00240025B1AF /* Build configuration list for PBXNativeTarget "PDFgoQuery" */;
+			buildPhases = (
+				5725E87FA526DAEDDB4CCD79 /* [CP] Check Pods Manifest.lock */,
+				8CE239A4222E00220025B1AF /* Sources */,
+				8CE239A5222E00220025B1AF /* Frameworks */,
+				8CE239A6222E00220025B1AF /* Resources */,
+				0B42CC755080D42125AEEF03 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFgoQuery;
+			productName = PDFgoQuery;
+			productReference = 8CE239A8222E00220025B1AF /* PDFgoQuery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CE239A0222E00220025B1AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PD;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Lemonade;
+				TargetAttributes = {
+					8CE239A7222E00220025B1AF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8CE239A3222E00220025B1AF /* Build configuration list for PBXProject "PDFgoQuery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CE2399F222E00220025B1AF;
+			productRefGroup = 8CE239A9222E00220025B1AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CE239A7222E00220025B1AF /* PDFgoQuery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CE239A6222E00220025B1AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE239D1222E034C0025B1AF /* LaunchScreen.storyboard in Resources */,
+				8CE239D2222E034C0025B1AF /* Main.storyboard in Resources */,
+				8CE239CB222E02310025B1AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B42CC755080D42125AEEF03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PDFgoQuery/Pods-PDFgoQuery-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDFgoQuery/Pods-PDFgoQuery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5725E87FA526DAEDDB4CCD79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDFgoQuery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CE239A4222E00220025B1AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE23A34222E5C1B0025B1AF /* UINavigationController+pd_transition.m in Sources */,
+				8CE23A31222E5C1B0025B1AF /* UIControl+Event.m in Sources */,
+				8CE239CE222E02310025B1AF /* main.m in Sources */,
+				8C3A05B2222FB29F00F804E6 /* PDHomepageViewController.m in Sources */,
+				8CE23A35222E5C1B0025B1AF /* NSObject+Utils.m in Sources */,
+				8CE23A2F222E5C1B0025B1AF /* UITextView+Placeholder.m in Sources */,
+				8CE23A36222E5C1B0025B1AF /* NSMutableDictionary+Sort.m in Sources */,
+				8CE23A38222E5C1B0025B1AF /* NSString+Utils.m in Sources */,
+				8CE23A39222E5C1B0025B1AF /* NSObject+MJExtension.m in Sources */,
+				8C27EFCD22321C1300AEE005 /* PDServantDetailViewController.m in Sources */,
+				8CE23A45222E62EC0025B1AF /* PDConstant.m in Sources */,
+				8CE23A33222E5C1B0025B1AF /* UIViewController+pd_transition.m in Sources */,
+				8CE23A2E222E5C1B0025B1AF /* UIButton+Countdown.m in Sources */,
+				8CE23A44222E62EC0025B1AF /* PDBaseRequest.m in Sources */,
+				8CE23A2D222E5C1B0025B1AF /* UIView+Utils.m in Sources */,
+				8CE23A32222E5C1B0025B1AF /* UIImage+Utils.m in Sources */,
+				8CE23A30222E5C1B0025B1AF /* UIScrollView+Refresh.m in Sources */,
+				8CE23A37222E5C1B0025B1AF /* NSArray+Utils.m in Sources */,
+				8C27EFCA223213FF00AEE005 /* PDServantListModel.m in Sources */,
+				8C1506002230C2450057D940 /* PDHomepageViewModel.m in Sources */,
+				8CE23A3E222E5CD20025B1AF /* RC_NavigationViewController.m in Sources */,
+				8CE239CF222E02310025B1AF /* AppDelegate.m in Sources */,
+				8CE23A3A222E5C1B0025B1AF /* NSDate+Utils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CE239C4222E02310025B1AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CE239C5222E02310025B1AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8CE239C6222E02310025B1AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CE239C7222E02310025B1AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CE239BC222E00240025B1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8CE239BD222E00240025B1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CE239BF222E00240025B1AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ADE0D9A1D15538B5B58C41E /* Pods-PDFgoQuery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BXWYPZNJYK;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/SupportingFiles/PDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PDFgoQuery/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lemonade.PDFgoQuery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CE239C0222E00240025B1AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99EF89C5AB3C46C69F2DA8AD /* Pods-PDFgoQuery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BXWYPZNJYK;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/SupportingFiles/PDPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PDFgoQuery/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lemonade.PDFgoQuery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CE239A3222E00220025B1AF /* Build configuration list for PBXProject "PDFgoQuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE239BC222E00240025B1AF /* Debug */,
+				8CE239BD222E00240025B1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE239BE222E00240025B1AF /* Build configuration list for PBXNativeTarget "PDFgoQuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE239BF222E00240025B1AF /* Debug */,
+				8CE239C0222E00240025B1AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CE239A0222E00220025B1AF /* Project object */;
+}
