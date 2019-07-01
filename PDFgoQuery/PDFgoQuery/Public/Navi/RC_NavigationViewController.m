@@ -29,6 +29,7 @@
     //设置导航条的标题文字属性
     navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:17 weight:UIFontWeightMedium],NSForegroundColorAttributeName:UIColor.blackColor};
     // 设置导航下方分割线颜色
+//    [navigationBar setShadowImage:[UIImage imageWithColor:UIColorFromRGB(0x000000)]];
     [navigationBar setShadowImage:[UIImage new]];
 }
 

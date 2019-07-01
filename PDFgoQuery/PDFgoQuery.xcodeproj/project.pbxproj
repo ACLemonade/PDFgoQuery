@@ -12,6 +12,8 @@
 		8C27EFCA223213FF00AEE005 /* PDServantListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C27EFC9223213FF00AEE005 /* PDServantListModel.m */; };
 		8C27EFCD22321C1300AEE005 /* PDServantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C27EFCC22321C1300AEE005 /* PDServantDetailViewController.m */; };
 		8C3A05B2222FB29F00F804E6 /* PDHomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3A05B1222FB29F00F804E6 /* PDHomepageViewController.m */; };
+		8C53CD262235EE350037D56E /* PDServantDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C53CD252235EE350037D56E /* PDServantDetailViewModel.m */; };
+		8C53CD29223611810037D56E /* PDServantDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C53CD28223611810037D56E /* PDServantDetailModel.m */; };
 		8CE239CB222E02310025B1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE239C3222E02310025B1AF /* Assets.xcassets */; };
 		8CE239CE222E02310025B1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE239C8222E02310025B1AF /* main.m */; };
 		8CE239CF222E02310025B1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE239C9222E02310025B1AF /* AppDelegate.m */; };
@@ -47,6 +49,10 @@
 		8C27EFCC22321C1300AEE005 /* PDServantDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDServantDetailViewController.m; sourceTree = "<group>"; };
 		8C3A05B0222FB29F00F804E6 /* PDHomepageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDHomepageViewController.h; sourceTree = "<group>"; };
 		8C3A05B1222FB29F00F804E6 /* PDHomepageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDHomepageViewController.m; sourceTree = "<group>"; };
+		8C53CD242235EE350037D56E /* PDServantDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDServantDetailViewModel.h; sourceTree = "<group>"; };
+		8C53CD252235EE350037D56E /* PDServantDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDServantDetailViewModel.m; sourceTree = "<group>"; };
+		8C53CD27223611810037D56E /* PDServantDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDServantDetailModel.h; sourceTree = "<group>"; };
+		8C53CD28223611810037D56E /* PDServantDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDServantDetailModel.m; sourceTree = "<group>"; };
 		8CE239A8222E00220025B1AF /* PDFgoQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFgoQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE239C2222E02310025B1AF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CE239C3222E02310025B1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +149,8 @@
 			children = (
 				8C1505FE2230C2450057D940 /* PDHomepageViewModel.h */,
 				8C1505FF2230C2450057D940 /* PDHomepageViewModel.m */,
+				8C53CD242235EE350037D56E /* PDServantDetailViewModel.h */,
+				8C53CD252235EE350037D56E /* PDServantDetailViewModel.m */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -152,6 +160,8 @@
 			children = (
 				8C27EFC8223213FF00AEE005 /* PDServantListModel.h */,
 				8C27EFC9223213FF00AEE005 /* PDServantListModel.m */,
+				8C53CD27223611810037D56E /* PDServantDetailModel.h */,
+				8C53CD28223611810037D56E /* PDServantDetailModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -401,11 +411,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PDFgoQuery/Pods-PDFgoQuery-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/YBImageBrowser/YBImageBrowser/YBImageBrowser.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YBImageBrowser.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -447,7 +459,9 @@
 				8CE23A38222E5C1B0025B1AF /* NSString+Utils.m in Sources */,
 				8CE23A39222E5C1B0025B1AF /* NSObject+MJExtension.m in Sources */,
 				8C27EFCD22321C1300AEE005 /* PDServantDetailViewController.m in Sources */,
+				8C53CD29223611810037D56E /* PDServantDetailModel.m in Sources */,
 				8CE23A45222E62EC0025B1AF /* PDConstant.m in Sources */,
+				8C53CD262235EE350037D56E /* PDServantDetailViewModel.m in Sources */,
 				8CE23A33222E5C1B0025B1AF /* UIViewController+pd_transition.m in Sources */,
 				8CE23A2E222E5C1B0025B1AF /* UIButton+Countdown.m in Sources */,
 				8CE23A44222E62EC0025B1AF /* PDBaseRequest.m in Sources */,

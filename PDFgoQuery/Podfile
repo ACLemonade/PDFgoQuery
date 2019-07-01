@@ -15,6 +15,7 @@ target 'PDFgoQuery' do
   pod 'SDWebImage'
   pod 'Toast'
   pod 'ReactiveObjC'
+  pod 'YBImageBrowser'
   # pod 'Realm'
   
 
