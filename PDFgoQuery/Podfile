@@ -16,6 +16,7 @@ target 'PDFgoQuery' do
   pod 'Toast'
   pod 'ReactiveObjC'
   pod 'YBImageBrowser'
+  pod 'WMPageController', '~> 2.4.0'
   # pod 'Realm'
   
 

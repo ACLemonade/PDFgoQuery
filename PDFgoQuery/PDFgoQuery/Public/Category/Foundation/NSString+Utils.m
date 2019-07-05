@@ -132,10 +132,10 @@
     return resultStr;
 }
 + (NSString *)tripleDES:(NSString *)plainText encryptOrDecrypt:(CCOperation)encryptOrDecrypt key:(NSString *)key {
-
+    
     const void *vplainText;
     size_t plainTextBufferSize;
-
+    
     if (encryptOrDecrypt == kCCDecrypt) {   // 解密
         NSData *decryptData = [[NSData alloc] initWithBase64EncodedString:plainText options:NSDataBase64DecodingIgnoreUnknownCharacters];
         plainTextBufferSize = [decryptData length];
@@ -150,7 +150,7 @@
     uint8_t *bufferPtr = NULL;
     size_t bufferPtrSize = 0;
     size_t movedBytes = 0;
-
+    
     bufferPtrSize = (plainTextBufferSize + kCCBlockSize3DES) & ~(kCCBlockSize3DES - 1);
     bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
     memset((void *)bufferPtr, 0x0, bufferPtrSize);
@@ -158,7 +158,7 @@
     NSString *initVec = @"p2p_s2iv";
     const void *vkey = (const void *) [key UTF8String];
     const void *vinitVec = (const void *) [initVec UTF8String];
-
+    
     ccStatus = CCCrypt(encryptOrDecrypt,
                        kCCAlgorithm3DES,
                        kCCOptionPKCS7Padding | kCCOptionECBMode,
@@ -170,8 +170,8 @@
                        (void *)bufferPtr,
                        bufferPtrSize,
                        &movedBytes);
-
-
+    
+    
     NSString *resultStr = nil;
     NSData *tmpData = [NSData dataWithBytes:(const void *)bufferPtr length:(NSUInteger)movedBytes];
     if (encryptOrDecrypt == kCCDecrypt) {   // 解密
@@ -221,7 +221,8 @@ static const void *paragraphStyleKey = &paragraphStyleKey;
         attributedDictionary = [self attributedDictionaryWithFont:font hasFirstLineHeadIndent:hasFirstLineHeadIndent];
     }
     CGSize size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attributedDictionary context:nil].size;
-    return size.height;
+    // 向上取整,以免浮点数截掉小数点后几位导致高度变小,显示不全
+    return ceil(size.height);
 }
 - (NSDictionary *)attributedDictionaryWithFont:(UIFont *)font
                         hasFirstLineHeadIndent:(BOOL)hasFirstLineHeadIndent {
@@ -230,7 +231,6 @@ static const void *paragraphStyleKey = &paragraphStyleKey;
     NSDictionary *dic = @{
                           NSFontAttributeName: font,
                           NSParagraphStyleAttributeName: self.pargraphStyle,
-                          NSKernAttributeName: @1.5f,
                           NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleNone]
                           };
     return dic;
@@ -261,7 +261,7 @@ static const void *paragraphStyleKey = &paragraphStyleKey;
         // 段落后间距(暂时发现\n存在时生效)
         style.paragraphSpacing = 0.0;
         //    // 行间距(是默认行间距的多少倍)
-        //    paragraphStyle.lineHeightMultiple = 1.6;
+        //        style.lineHeightMultiple = 1.5;
     }
     
     return style;

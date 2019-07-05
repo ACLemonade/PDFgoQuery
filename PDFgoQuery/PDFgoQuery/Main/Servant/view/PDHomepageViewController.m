@@ -7,14 +7,14 @@
 //
 
 #import "PDHomepageViewController.h"
-#import "PDServantDetailViewController.h"
+#import "PDServantDetailMenuPageController.h"
 #import "PDHomepageViewModel.h"
 
-static NSString *const const_type_cell_ID = @"const_type_cell_ID";
+static NSString *const constTypeCellIdentifier = @"constTypeCellIdentifier";
 
-static CGFloat const const_cell_line_spacing = 10;
-static CGFloat const const_cell_interitem_spacing = 10;
-static NSInteger const const_cell_num_per_line = 5;
+static CGFloat const constCellLineSpacing = 10;
+static CGFloat const constCellLineSpacingInteritemSpacing = 10;
+static NSInteger const constCellNumPerLine = 5;
 
 @interface PDHomepageViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -33,12 +33,12 @@ static NSInteger const const_cell_num_per_line = 5;
     [super viewDidLoad];
     self.navigationItem.title = @"从者选择";
     // 注册cell
-    [self.typeCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:const_type_cell_ID];
+    [self.typeCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:constTypeCellIdentifier];
 //    self.typeBackList = @[@"back_Saber", @"back_Archer", @"back_Lancer", @"back_Rider", @"back_Caster", @"back_Assassin", @"back_Berserker", @"back_Ruler", @"back_Avenger", @"back_Alterego", @"back_Foreigner", @"back_Other"];
-    self.typeFlowLayout.minimumLineSpacing = const_cell_line_spacing;
-    self.typeFlowLayout.minimumInteritemSpacing = const_cell_interitem_spacing;
-    self.typeFlowLayout.sectionInset = UIEdgeInsetsMake(0, const_cell_interitem_spacing, const_cell_line_spacing, const_cell_interitem_spacing);
-    CGFloat width = (SCREEN_WIDTH-const_cell_interitem_spacing*2-const_cell_interitem_spacing*(const_cell_num_per_line-1))/const_cell_num_per_line;
+    self.typeFlowLayout.minimumLineSpacing = constCellLineSpacing;
+    self.typeFlowLayout.minimumInteritemSpacing = constCellLineSpacingInteritemSpacing;
+    self.typeFlowLayout.sectionInset = UIEdgeInsetsMake(constCellLineSpacing, constCellLineSpacingInteritemSpacing, constCellLineSpacing, constCellLineSpacingInteritemSpacing);
+    CGFloat width = (SCREEN_WIDTH-constCellLineSpacingInteritemSpacing*2-constCellLineSpacingInteritemSpacing*(constCellNumPerLine-1))/constCellNumPerLine;
     CGFloat height = width*140/128;
     self.typeFlowLayout.itemSize = CGSizeMake(width, height);
     self.typeFlowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
@@ -62,7 +62,7 @@ static NSInteger const const_cell_num_per_line = 5;
     return self.viewModel.servantList.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:const_type_cell_ID forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:constTypeCellIdentifier forIndexPath:indexPath];
     PDServantListModel *model = self.viewModel.servantList[indexPath.row];
     NSString *iconPath = [model.imgPath containsString:CONST_BASE_URL] ? model.imgPath :[CONST_BASE_URL stringByAppendingString:model.imgPath];
     UIImageView *iconIV = [[UIImageView alloc] init];
@@ -75,7 +75,7 @@ static NSInteger const const_cell_num_per_line = 5;
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     PDServantListModel *model = self.viewModel.servantList[indexPath.row];
     NSLog(@"英灵编号: %@", model.ID);
-    PDServantDetailViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([PDServantDetailViewController class])];
+    PDServantDetailMenuPageController *vc = [[PDServantDetailMenuPageController alloc] init];
     vc.servantId = model.ID;
     vc.navigationItem.title = model.name;
     [self.navigationController pushViewController:vc animated:YES];

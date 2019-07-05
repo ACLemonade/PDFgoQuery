@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
@@ -66,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (CGFloat)heightWithFont:(nullable UIFont *)font
                     width:(CGFloat)width
-      attributedDictionary:(nullable NSDictionary *)attributedDictionary;
+     attributedDictionary:(nullable NSDictionary *)attributedDictionary;
 /** 计算文本高度(根据字体, 宽度, 是否首行缩进, 富文本字典)
  *
  *  @param   font    文本字体

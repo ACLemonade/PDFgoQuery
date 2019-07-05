@@ -11,6 +11,7 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import <YTKNetwork/YTKNetwork.h>
+#define MAS_SHORTHAND_GLOBALS
 #import <Masonry/Masonry.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <MJRefresh/MJRefresh.h>
@@ -19,6 +20,7 @@
 #import <Toast/Toast.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <YBImageBrowser/YBImageBrowser.h>
+#import <WMPageController/WMPageController.h>
 
 #import "PDConstant.h"
 #import "PDBaseRequest.h"

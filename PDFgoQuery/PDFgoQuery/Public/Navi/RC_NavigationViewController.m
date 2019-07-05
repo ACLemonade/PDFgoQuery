@@ -29,8 +29,8 @@
     //设置导航条的标题文字属性
     navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:17 weight:UIFontWeightMedium],NSForegroundColorAttributeName:UIColor.blackColor};
     // 设置导航下方分割线颜色
-//    [navigationBar setShadowImage:[UIImage imageWithColor:UIColorFromRGB(0x000000)]];
-    [navigationBar setShadowImage:[UIImage new]];
+    [navigationBar setShadowImage:[UIImage imageWithColor:NAV_SEPARATOR_COLOR]];
+//    [navigationBar setShadowImage:[UIImage new]];
 }
 
 - (void)viewDidLoad {
@@ -61,7 +61,7 @@
         //压栈时设置非根控制器隐藏底部tabbar
         viewController.hidesBottomBarWhenPushed = YES;
         // 设置导航条左边按钮,把系统的返回按钮给覆盖,导航控制器的滑动返回功能就没有了
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_back"] style:UIBarButtonItemStylePlain target:self action:@selector(handleBack)];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navi_back"] style:UIBarButtonItemStylePlain target:self action:@selector(handleBack)];
     }
     [super pushViewController:viewController animated:animated];
 }
