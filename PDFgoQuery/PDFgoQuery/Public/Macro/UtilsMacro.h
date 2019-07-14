@@ -16,26 +16,10 @@
 #endif
 
 
-typedef NS_ENUM(NSInteger,AppDelegateTargetActionType){
-    /**
-     *  默认，直接进入首页
-     */
-    Default = 0,
-    /**
-     *  主页
-     */
-    Home,
-    /**
-     *  登陆页
-     */
-    Login,
-};
-
 #define RCDefaultDuration 2.f
 
-#define ServiceName     @"com.zjrongchuang.fireCicada"
+#define ServiceName     APPBundleID
 
-#define PUBKEY @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCO9EyByr2NSiMbj6xf6WePVGeangsfuBC+0k1TWAppaM/XbESsw+/nJVz5gwlU30XEAjK4G8oTUv6fYt807luE0WVJogVfhccvrs9IkiRWEU8PwR8iTuiHzWYkyrzuZ4bjWYYVo6FOM61xz5pTBB1wLwxuo7RAM7TzrNRlE+U1zwIDAQAB"
 
 #define SHOW_ALERT(_msg_)  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:_msg_ delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];\
 [alert show];
@@ -84,9 +68,6 @@ typedef NS_ENUM(NSInteger,AppDelegateTargetActionType){
 // BundleID
 #define APPBundleID             [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
 
-#define BaiDuMapKey    @"mhZbxOgmL0X57ETvPnzbhGkeg3npGjXZ"
-#define BaiDuMapKey_HZ @"VGBs2nPRFFhAxNBD0qOeyb7hZz7Zxwpd"
-#define BaiDuMapKey_JH @"1q0lPVEBG9p8jYiMP1wg7qOkh6hPzsDv"
 
 // 当前语言
 #define CURRENTLANGUAGE         ([[NSLocale preferredLanguages] objectAtIndex:0])
@@ -126,24 +107,7 @@ typedef NS_ENUM(NSInteger,AppDelegateTargetActionType){
 //masonry mas_equalTo -> equalTo
 #define MAS_SHORTHAND_GLOBALS
 
-#define COMPANY_TYPE_ARRAY              [NSArray arrayWithObjects:@"景区景点", @"酒店", @"旅行社", @"购物商场", nil]
-#define SCENIC_TYPE_ARRAY               [NSArray arrayWithObjects:@"AAAAA", @"AAAA", @"AAA", @"AA", @"A", @"无", nil]
-#define WINESHOP_TYPE_ARRAY             [NSArray arrayWithObjects:@"星级酒店", @"主题酒店", @"绿色酒店", nil]
-#define WINESHOP_STAR_TYPE_ARRAY        [NSArray arrayWithObjects:@"未评定", @"1星", @"2星", @"3星", @"4星", @"5星", nil]
-#define WINESHOP_THEME_TYPE_ARRAY       [NSArray arrayWithObjects:@"金鼎", @"银鼎", @"其他", nil]
-#define WINESHOP_GREEN_TYPE_ARRAY       [NSArray arrayWithObjects:@"金树叶", @"银树叶", nil]
-#define CR_REPAIR_STATE                 @[@"",@"待整改",@"待审核",@"延期申请",@"已完成",@"已过期",@"已督办"]
-
-#define CR_EXAMINE_STATE                 @[@"待审核",@"审核通过",@"审核不通过"]
-
 #define WEEKDAY_ARRAY       @[@"", @"星期天", @"星期一", @"星期二", @"星期三", @"星期四", @"星期五", @"星期六"]
-
-
-#define BANNER_SCENIC_ARRAY                 @[@"wu_01",@"nan_01",@"chang_01",@"an_01",@"de_01",@"du_01",@"kai_01"]
-#define BANNER_WINESHOP_ARRAY                 @[@"wu_02",@"nan_02",@"chang_02",@"an_02",@"de_02",@"du_02",@"kai_02"]
-#define BANNER_TRAVEL_ARRAY                 @[@"wu_03",@"nan_03",@"chang_03",@"an_03",@"de_03",@"du_03",@"kai_03"]
-#define BANNER_SHOPPING_ARRAY                 @[@"wu_04",@"nan_04",@"chang_04",@"an_04",@"de_04",@"du_04",@"kai_04"]
-
 
 
 //归解档
